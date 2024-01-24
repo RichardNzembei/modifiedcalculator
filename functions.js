@@ -59,4 +59,27 @@ function calculateCos() {
     }
    
 }
-function mathPI()
+function calculatepow2() {
+    const displayElement = document.getElementById('display');
+    const currentValue = displayElement.value;
+
+    // Convert the input value to a number
+    const numberValue = parseFloat(currentValue);
+
+    // Check if the conversion is successful and the input is a valid number
+    if (!isNaN(numberValue)) {
+        try {
+            // Calculate the square (power of 2) of the number
+            const result = Math.pow(numberValue, 2);
+
+            // Update the display with the calculated result
+            displayElement.value = result;
+        } catch (error) {
+            // If an error occurs during calculation, set the display to 'Error'
+            displayElement.value = 'Error';
+        }
+    } else {
+        // If the input is not a valid number, set the display to 'Error'
+        displayElement.value = 'Error';
+    }
+}
