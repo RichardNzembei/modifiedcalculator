@@ -7,7 +7,11 @@
     </head>
     <body>
         <div id="calculator">
-            <input type="text" id="display" disabled>    
+            <input type="text" id="display" disabled> 
+            <button onclick="calculateSin()">sin</button>
+            <button onclick="calculateTan()">Tan</button>
+            <button onclick="calculateCos()">Cos</button>
+         
             <br>
             <button onclick="appendToDisplay('/')">/</button> 
             <button onclick="appendToDisplay('(')">(</button>
@@ -31,7 +35,6 @@
             <br>
             <button onclick="clearDisplay()">DEL</button>
             <button onclick="appendToDisplay('0')">0</button>
-            <button onclick="showDisplay()">ANS</button>
             <button onclick="calculateResult()">=</button>
     </div>
     </body>

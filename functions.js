@@ -1,5 +1,6 @@
 function appendToDisplay(value){
     document.getElementById('display').value+=value;
+    
 }
 
 function clearDisplay(value){
@@ -20,6 +21,42 @@ function calculateResult(value){
     }
     catch(error){
         document.getElementById('display').value="error";
-    }
-    
+    }   
 }
+function calculateSin() {
+    const displayElement = document.getElementById('display');
+    const currentValue = displayElement.value;
+    
+    try {
+        const result = Math.sin(eval(currentValue*Math.PI/180));
+        displayElement.value = result;
+    } catch (error) {
+        displayElement.value = 'Error';
+    }
+   
+}
+function calculateTan() {
+    const displayElement = document.getElementById('display');
+    const currentValue = displayElement.value;
+    
+    try {
+        const result = Math.tan(eval(currentValue));
+        displayElement.value = result;
+    } catch (error) {
+        displayElement.value = 'Error';
+    }
+   
+}
+function calculateCos() {
+    const displayElement = document.getElementById('display');
+    const currentValue = displayElement.value;
+    
+    try {
+        const result = Math.cos(eval(currentValue));
+        displayElement.value = result;
+    } catch (error) {
+        displayElement.value = 'Error';
+    }
+   
+}
+function mathPI()
