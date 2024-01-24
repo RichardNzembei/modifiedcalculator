@@ -63,23 +63,94 @@ function calculatepow2() {
     const displayElement = document.getElementById('display');
     const currentValue = displayElement.value;
 
-    // Convert the input value to a number
+    
     const numberValue = parseFloat(currentValue);
-
-    // Check if the conversion is successful and the input is a valid number
     if (!isNaN(numberValue)) {
         try {
-            // Calculate the square (power of 2) of the number
+            
             const result = Math.pow(numberValue, 2);
 
-            // Update the display with the calculated result
+            
             displayElement.value = result;
         } catch (error) {
-            // If an error occurs during calculation, set the display to 'Error'
+           
             displayElement.value = 'Error';
         }
     } else {
-        // If the input is not a valid number, set the display to 'Error'
+       
         displayElement.value = 'Error';
     }
+}
+function  calculatesqrt(){
+    const displayElement = document.getElementById('display');
+    const currentValue = displayElement.value;
+
+    
+    const numberValue = parseFloat(currentValue);
+    if (!isNaN(numberValue)) {
+        try {
+            
+            const result = Math.sqrt(numberValue);
+
+            
+            displayElement.value = result;
+        } catch (error) {
+           
+            displayElement.value = 'Error';
+        }
+    } else {
+       
+        displayElement.value = 'Error';
+    }
+}
+function calculatecub3() {
+    const displayElement = document.getElementById('display');
+    const currentValue = displayElement.value;
+
+    
+    const numberValue = parseFloat(currentValue);
+    if (!isNaN(numberValue)) {
+        try {
+            
+            const result = Math.cbrt(numberValue);
+
+            
+            displayElement.value = result;
+        } catch (error) {
+           
+            displayElement.value = 'Error';
+        }
+    } else {
+       
+        displayElement.value = 'Error';
+    }
+}
+function calculateLog2() {
+    const displayElement = document.getElementById('display');
+    const currentValue = displayElement.value;
+
+    
+    const numberValue = parseFloat(currentValue);
+    if (!isNaN(numberValue)) {
+        try {
+            
+            const result = Math.log2(numberValue);
+
+            
+            displayElement.value = result;
+        } catch (error) {
+           
+            displayElement.value = 'Error';
+        }
+    } else {
+       
+        displayElement.value = 'Error';
+    }
+}
+function usingPI(value) {
+    
+    const displayElement = document.getElementById('display');
+    displayElement.value += value;
+    const newPIValue = parseFloat(displayElement.value) * Math.PI;
+    displayElement.value = newPIValue;
 }

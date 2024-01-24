@@ -7,11 +7,21 @@
     </head>
     <body>
         <div id="calculator">
-            <input type="text" id="display" disabled> 
+           
+        <input type="text" id="display" disabled> 
+        <div id="funcionalkeys">  
+            <button onclick="calculatesqrt()">sqrt2</button>
+            <button onclick="calculatecub3()">cbrt3</button>
+            <button onclick="calculateLog2()">log2</button>
+            <button onclick="usingPI('(π) ')">(pie) </button>
+          
+            <br>
+
             <button onclick="calculateSin()">sin</button>
             <button onclick="calculateTan()">Tan</button>
             <button onclick="calculateCos()">Cos</button>
             <button onclick="calculatepow2()">x"</button>
+        </div>    
          
             <br>
             <button onclick="appendToDisplay('/')">/</button> 
